@@ -20,7 +20,7 @@
 
         <?php
           for ($i=1; $i <= 12; $i++) {
-            $book = "k".$i;
+            $book = $i;
             if ($book == $_GET[book]) {
               echo '<li role="presentation" class="active"><a href="index.php?book='.$i.'">Księga '.rome($i).'</a>';
             } else {
