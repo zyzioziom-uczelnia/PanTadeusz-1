@@ -14,12 +14,10 @@
 		<h1 class="text-center">Pan Tadeusz, czyli ostatni zajazd na Litwie</h1>
 		<h2 class="text-center">Historia szlachecka z roku 1811 i 1812 we dwunastu ksiegach wierszem</h2>
 		<div class"row">
-		  <div class="col-md-3 panel panel-default">
-		    <div class="panel-body"
-			<p>Spis Tresci</p>
-			<ul>
-			<?php
-			  
+      <div id="menu">
+
+			<ul class="nav nav-pills">
+
 				<li><a href="./">Strona Glowna</a></li>
 				<li><a href="./k1.html">Księga I</a></li>
 				<li><a href="./k2.html">Księga II</a></li>
@@ -40,5 +38,5 @@
 			Ksiegi
 		  </div>
 		</div>
-	</body>	
+	</body>
 </html>
