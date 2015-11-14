@@ -36,6 +36,9 @@
         <div class="col-md-6 panel panel-default">
           <div class="panel-body">
             <h1>Refleksje</h1>
+            <p>Tutaj formularz na napisanie refleksji który POSTem wysyła do bazy danych refleksje</p>
+            <p>Tutaj refleksje pobrane z bazy danych</p>
+
           </div>
         </div>
 		    <div class="col-md-6 panel panel-default">
