@@ -22,26 +22,13 @@
           for ($i=1; $i <= 12; $i++) {
             $book = "k".$i;
             if ($book == $_GET[book]) {
-              echo '<li role="presentation" class="active"><a href="index.php?book='.$i.'">Księga '.$i.'</a>';
+              echo '<li role="presentation" class="active"><a href="index.php?book='.$i.'">Księga '.rome($i).'</a>';
             } else {
-              echo '<li role="presentation"><a href="index.php?book='.$i.'">Księga '.$i.'</a>';
+              echo '<li role="presentation"><a href="index.php?book='.$i.'">Księga '.rome($i).'</a>';
             }
           }
         ?>
 
-				<li><a href="./">Strona Glowna</a></li>
-				<li><a href="./k1.html">Księga I</a></li>
-				<li><a href="./k2.html">Księga II</a></li>
-				<li><a href="./k3.html">Księga III</a></li>
-				<li><a href="./k4.html">Księga IV</a></li>
-				<li><a href="./k5.html">Księga V</a></li>
-				<li><a href="./k6.html">Księga VI</a></li>
-				<li><a href="./k7.html">Księga VII</a></li>
-				<li><a href="./k8.html">Księga VIII</a></li>
-				<li><a href="./k9.html">Księga IX</a></li>
-				<li><a href="./k10.html">Księga X</a></li>
-				<li><a href="./k11.html">Księga XI</a></li>
-				<li><a href="./k12.html">Księga XII</a></li>
 			</ul>
 		  </div>
 			</div>
@@ -51,3 +38,12 @@
 		</div>
 	</body>
 </html>
+
+<?php
+function rome($N){
+    $c='IVXLCDM';
+    for($a=5,$b=$s='';$N;$b++,$a^=7)
+        for($o=$N%$a,$N=$N/$a^0;$o--;$s=$c[$o>2?$b+$N-($N&=-2)+$o=1:$b].$s);
+    return $s;
+}
+?>
