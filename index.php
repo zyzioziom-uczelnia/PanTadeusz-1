@@ -33,7 +33,12 @@
 		  </div>
 			</div>
 		  <div class="col-md-9 panel">
-			Ksiegi
+			  <?php
+          $book = './k'.$_GET[book].'.html';
+          require_once($book);
+          
+
+        ?>
 		  </div>
 		</div>
 	</body>
