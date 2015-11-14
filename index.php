@@ -32,13 +32,14 @@
 			</ul>
 		  </div>
 			</div>
-		  <div class="col-md-9 panel">
-			  <?php
-          $book = './k'.$_GET[book].'.html';
-          require_once($book);
-          
-
-        ?>
+      <div class="row">
+		    <div class="col-md-12 panel panel-default">
+          <div class="panel-body">
+    			  <?php
+              $book = './k'.$_GET[book].'.html';
+              require_once($book);
+            ?>
+          </div>
 		  </div>
 		</div>
 	</body>
