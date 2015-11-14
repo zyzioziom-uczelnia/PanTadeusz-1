@@ -22,13 +22,13 @@
           for ($i=1; $i <= 12; $i++) {
             $book = "k".$i;
             if ($book == $_GET[book]) {
-              echo '<li role="presentation" class="active"><a href="index.php?book=".$i."">';
+              echo '<li role="presentation" class="active"><a href="index.php?book='.$i.'"">';
             } else {
-              echo '<li role="presentation"><a href="index.php?book=".$i."">';
+              echo '<li role="presentation"><a href="index.php?book='.$i.'">';
             }
           }
         ?>
-        
+
 				<li><a href="./">Strona Glowna</a></li>
 				<li><a href="./k1.html">Księga I</a></li>
 				<li><a href="./k2.html">Księga II</a></li>
