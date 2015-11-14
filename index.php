@@ -33,7 +33,12 @@
 		  </div>
 			</div>
       <div class="row">
-		    <div class="col-md-12 panel panel-default">
+        <div class="col-md-6 panel panel-default">
+          <div class="panel-body">
+            <h1>Refleksje</h1>
+          </div>
+        </div>
+		    <div class="col-md-6 panel panel-default">
           <div class="panel-body">
     			  <?php
               $book = './k'.$_GET[book].'.html';
