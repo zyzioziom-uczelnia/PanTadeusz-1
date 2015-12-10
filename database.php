@@ -24,7 +24,7 @@ if ($title != "" && $reflection != "") {
 
   mysqli_close($conn);
 
-  echo "Finished";
+  echo "<script>window.location.reload()</script>";
 }
 
 $sql = "SELECT id, title, reflection FROM reflections";

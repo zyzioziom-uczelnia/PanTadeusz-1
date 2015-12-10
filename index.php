@@ -40,9 +40,9 @@
             <form action="index.php" method="post">
             Tytuł: <input type="text" name="title"><br>
             Treść: <input type="text" name="reflection"><br>
-            <input type="submit" value="Dodaj refleksję">
+            <input type="submit" value="Dodaj refleksję" class="btn btn-primary">
             </form>
-
+            <hr/>
             <?php include 'database.php'; ?>
 
 
