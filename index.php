@@ -37,7 +37,7 @@
           <div class="panel-body">
             <h1>Refleksje</h1>
 
-            <form action="add_reflection.php" method="post">
+            <form action="index.php" method="post">
             Tytuł: <input type="text" name="title"><br>
             Treść: <input type="text" name="reflection"><br>
             <input type="submit" value="Dodaj refleksję">
