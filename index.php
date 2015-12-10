@@ -36,6 +36,13 @@
         <div class="col-md-6 panel panel-default">
           <div class="panel-body">
             <h1>Refleksje</h1>
+
+            <form action="add_reflection.php" method="post">
+            Tytuł: <input type="text" name="title"><br>
+            Treść: <input type="text" name="reflection"><br>
+            <input type="submit" value="Dodaj refleksję">
+            </form>
+
             <p>Tutaj formularz na napisanie refleksji który POSTem wysyła do bazy danych refleksje</p>
             <p>Tutaj refleksje pobrane z bazy danych</p>
 
