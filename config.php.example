@@ -1,0 +1,11 @@
+<?php
+$servername = "hostname";
+$username = "username";
+$password = "password";
+$dbname = "database";
+
+// $mail_recipient = "example@mail.com";
+$mandrill_api_key = "PLACE YOUR API KEY HERE";
+$mail_recipient = "example@mail.com";
+$mail_recipient_name = "Adam Smith";
+?>

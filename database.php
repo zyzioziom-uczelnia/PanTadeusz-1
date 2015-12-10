@@ -24,6 +24,7 @@ if ($title != "" && $reflection != "") {
 
   mysqli_close($conn);
 
+  // send email with new reflection
   include 'mailer.php';
 
   // reload page
