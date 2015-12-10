@@ -14,7 +14,7 @@ if (!$conn) {
 
 if ($title != "" && $reflection != "") {
   $sql = "INSERT INTO reflections (title, reflection)
-  VALUES (".$title.", ".$reflection.")";
+  VALUES ('$title', '$reflection')";
 
   if (mysqli_query($conn, $sql)) {
       echo "New record created successfully";
