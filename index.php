@@ -45,8 +45,6 @@
 
             <?php include 'database.php'; ?>
             
-            <p>Tutaj formularz na napisanie refleksji który POSTem wysyła do bazy danych refleksje</p>
-            <p>Tutaj refleksje pobrane z bazy danych</p>
 
           </div>
         </div>

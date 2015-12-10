@@ -9,7 +9,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-echo "Connected successfully";
+
 
 $sql = "SELECT id, title, reflection FROM reflections";
 $result = $conn->query($sql);
@@ -20,7 +20,7 @@ if ($result->num_rows > 0) {
         echo "Numer: " . $row["id"]. " - Tytuł: " . $row["title"]. "<br /> " . $row["reflection"]. "<hr />";
     }
 } else {
-    echo "";
+    echo "Brak refleksji";
 }
 $conn->close();
 ?>
