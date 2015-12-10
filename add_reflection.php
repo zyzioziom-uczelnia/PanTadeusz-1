@@ -1,4 +1,8 @@
 <?php
+$title = $_POST['title'];
+$reflection = $_POST['reflection'];
+echo $title;
+echo $reflection;
 include 'config.php';
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -8,7 +12,7 @@ if (!$conn) {
 }
 
 $sql = "INSERT INTO reflections (title, reflection)
-VALUES ($_POST['title'], $_POST['reflection'])";
+VALUES (".$title.", ".$reflection.")";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
