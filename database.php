@@ -24,6 +24,9 @@ if ($title != "" && $reflection != "") {
 
   mysqli_close($conn);
 
+  include 'mailer.php';
+
+  // reload page
   echo "<script>window.location.reload()</script>";
 }
 
