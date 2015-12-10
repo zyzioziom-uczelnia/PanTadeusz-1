@@ -17,7 +17,7 @@ $params = [
 )
 ];
 
-$params['key'] = 'HEpZLrPrRBEa7W9fLAJKeQ';
+$params['key'] = $mandill_api_key;
 $params = json_encode($params);
 $ch = curl_init();
 
