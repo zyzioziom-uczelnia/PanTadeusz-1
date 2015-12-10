@@ -27,16 +27,16 @@ if ($title != "" && $reflection != "") {
   echo "<script>window.location.reload()</script>";
 }
 
-$sql = "SELECT id, title, reflection FROM reflections";
+$sql = "SELECT id, title, reflection FROM reflections ORDER BY id DESC";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "Numer: " . $row["id"]. " - Tytuł: " . $row["title"]. "<br /> " . $row["reflection"]. "<hr />";
+        echo "<h3>" . $row["title"]. "</h3>" . $row["reflection"]. "<hr />";
     }
 } else {
-    echo "Brak refleksji";
+    echo "<p>Brak refleksji</p>";
 }
 $conn->close();
 ?>

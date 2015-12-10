@@ -38,8 +38,11 @@
             <h1>Refleksje</h1>
 
             <form action="index.php" method="post">
-            Tytuł: <input type="text" name="title"><br>
-            Treść: <input type="text" name="reflection"><br>
+            <label for="title">Tytuł:</label>
+            <input type="text" name="title"><br>
+            <label for="reflection">Treść:</label>
+            <input type="text-field" name="reflection" class="form-control"><br>
+
             <input type="submit" value="Dodaj refleksję" class="btn btn-primary">
             </form>
             <hr/>
