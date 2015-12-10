@@ -12,7 +12,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-if ($title != "") {
+if ($title != "" && $reflection != "") {
   $sql = "INSERT INTO reflections (title, reflection)
   VALUES (".$title.", ".$reflection.")";
 
