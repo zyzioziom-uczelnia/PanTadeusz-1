@@ -18,7 +18,5 @@ if (mysqli_query($conn, $sql)) {
 
 mysqli_close($conn);
 
-echo '<script type="text/javascript">
-           window.location = "http://v-ie.uek.krakow.pl/~s180472/PanTadeusz"
-      </script>';
+echo "Finished";
 ?>
